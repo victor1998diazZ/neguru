@@ -1,0 +1,65 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+}
+body {
+    font-size: 16px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0;
+}
+nav img{
+    display: none;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin-right: 56px;
+}
+ul li:last-child{
+    margin-right: 0;
+}
+li a{
+    text-decoration: none;
+    font-size: 1em;
+}
+.signUp button{
+    padding: 18px 46px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.profile{
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/* Media Query */
+
+@media (max-width: 874px) {
+    .navigation{
+        padding: 26px 0;
+    }
+    nav{
+        order: -1;
+    }
+    nav ul, .signUp{
+        display: none;
+    }
+    nav img, .profile{
+        display: block;
+    }
+}
