@@ -1,9 +1,14 @@
-*, *::after, *::before{
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "PT Sans Narrow", sans-serif;  
 }
-.container{
+.container {
     max-width: 1300px;
     width: 90%;
     margin: 0 auto;
@@ -11,55 +16,55 @@
 body {
     font-size: 16px;
 }
-.navigation{
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 56px 0;
 }
-nav img{
+nav img {
     display: none;
     cursor: pointer;
 }
-nav ul{
+nav ul {
     display: flex;
 }
-ul li{
+ul li {
     list-style: none;
     margin-right: 56px;
 }
-ul li:last-child{
+ul li:last-child {
     margin-right: 0;
 }
-li a{
+li a {
     text-decoration: none;
     font-size: 1em;
 }
-.signUp button{
+.signUp button {
     padding: 18px 46px;
     background-color: transparent;
     cursor: pointer;
 }
-.profile{
+.profile {
     display: none;
     cursor: pointer;
 }
 
-
-
 /* Media Query */
 
 @media (max-width: 874px) {
-    .navigation{
+    .navigation {
         padding: 26px 0;
     }
-    nav{
+    nav {
         order: -1;
     }
-    nav ul, .signUp{
+    nav ul,
+    .signUp {
         display: none;
     }
-    nav img, .profile{
+    nav img,
+    .profile {
         display: block;
     }
 }
